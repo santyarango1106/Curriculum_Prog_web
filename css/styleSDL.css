@@ -6,19 +6,12 @@
 body {
   background: linear-gradient(
     90deg,
-    #003399,
-    #0033ff,
-    #0066ff,
-    #0099ff,
-    #66ccff,
-    #99ccff,
-    #9999ff,
-    #9966ff,
-    #9933ff,
-    #9900cc,
-    #663399,
-    #660099,
-    #330066
+    #ffd500,
+    #fba31a,
+    #f37220,
+    #df1e26,
+    #941a1c,
+    #5e0a0b
   );
 }
 
