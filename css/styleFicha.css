@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.ficha {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "encabezado-ficha"
+    "actividades-ficha"
+    "estados-ficha";
+  width: 750px;
+  background-color: aquamarine;
+}
+
+.encabezado-ficha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nombre-estudiante nombre-estudiante fotografia"
+    "enlaces enlaces fotografia";
+  grid-area: encabezado-ficha;
+  background-color: cyan;
+}
+
+.nombre-estudiante {
+  grid-area: nombre-estudiante;
+}
+
+.enlaces {
+  grid-area: enlaces;
+  background-color: darkturquoise;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+}
+
+.fotografia {
+  grid-area: fotografia;
+}
+
+img {
+  width: auto;
+  border-radius: 100px;
+}
+
+.actividades-ficha {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo-actividades"
+    "encabezado-actividades"
+    "estado-actividades";
+  grid-area: actividades-ficha;
+  background-color: deeppink;
+}
+
+.titulo-actividades {
+  grid-area: titulo-actividades;
+}
+
+.encabezado-actividades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "item nombre estadouiux estadodev";
+  grid-area: encabezado-actividades;
+}
+
+.item {
+  grid-area: item;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.estadouiux {
+  grid-area: estadouiux;
+}
+
+.estadodev {
+  grid-area: estadodev;
+}
+
+.estado-actividades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nro enlace porcentajeuiux porcentajedev";
+  grid-area: estado-actividades;
+}
+
+.nro {
+  grid-area: nro;
+}
+
+.enlace {
+  grid-area: enlace;
+}
+
+.porcentajeuiux {
+  grid-area: porcentajeuiux;
+}
+
+.porcentajedev {
+  grid-area: porcentajedev;
+}
+
+.estados-ficha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "estadohtml estadocss estadojs estadoui estadoux total";
+  grid-area: estados-ficha;
+  background-color: firebrick;
+}
+
+.estadohtml {
+  grid-area: estadohtml;
+}
+
+.estadocss {
+  grid-area: estadocss;
+}
+
+.estadojs {
+  grid-area: estadojs;
+}
+
+.estadoui {
+  grid-area: estadoui;
+}
+
+.estadoux {
+  grid-area: estadoux;
+}
+
+.total {
+  grid-area: total;
+}
