@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo-principal titulo-principal titulo-principal"
+    "primer-consulta primer-consulta primer-consulta"
+    "segunda-consulta segunda-consulta segunda-consulta"
+    "segunda-consulta segunda-consulta segunda-consulta"
+    "tercer-consulta tercer-consulta tercer-consulta";
+  background: linear-gradient(
+    200deg,
+    #fb0505,
+    #fb7607,
+    #f4ea07,
+    #61f205,
+    #00f6cb
+  );
+}
+
+.titulo-principal {
+  grid-area: titulo-principal;
+}
+
+.primer-consulta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo-1 titulo-1 titulo-1"
+    "texto-1 texto-1 texto-1"
+    "texto-1 texto-1 texto-1";
+  grid-area: primer-consulta;
+}
+
+.titulo-1 {
+  grid-area: titulo-1;
+}
+
+.texto-1 {
+  grid-area: texto-1;
+}
+
+.segunda-consulta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo-2 titulo-2 titulo-2"
+    "p1 p2 p3"
+    "p4 p5 p6";
+  grid-area: segunda-consulta;
+}
+
+.titulo-2 {
+  grid-area: titulo-2;
+}
+
+.p1 {
+  grid-area: p1;
+  border: 3px solid;
+}
+
+.p2 {
+  grid-area: p2;
+  border: 3px solid;
+}
+
+.p3 {
+  grid-area: p3;
+  border: 3px solid;
+}
+
+.p4 {
+  grid-area: p4;
+  border: 3px solid;
+}
+
+.p5 {
+  grid-area: p5;
+  border: 3px solid;
+}
+
+.p6 {
+  grid-area: p6;
+  border: 3px solid;
+}
+
+.tercer-consulta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo-3 titulo-3 titulo-3"
+    "texto-3 texto-3 texto-3"
+    "texto-3 texto-3 texto-3";
+  grid-area: tercer-consulta;
+}
+
+.titulo-3 {
+  grid-area: titulo-3;
+}
+
+.texto-3 {
+  grid-area: texto-3;
+}
