@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+:root {
+  --redondeo: 1.5rem;
+}
+
 .ficha {
   display: grid;
   grid-template-columns: 1fr;
@@ -14,7 +18,7 @@
     "actividades-ficha"
     "estados-ficha";
   width: 750px;
-  background-color: aquamarine;
+  background-color: #ff62a9;
 }
 
 .encabezado-ficha {
@@ -27,7 +31,8 @@
     "nombre-estudiante nombre-estudiante fotografia"
     "enlaces enlaces fotografia";
   grid-area: encabezado-ficha;
-  background-color: cyan;
+  background-color: #f77177;
+  border-radius: var(--redondeo);
 }
 
 .nombre-estudiante {
@@ -36,7 +41,8 @@
 
 .enlaces {
   grid-area: enlaces;
-  background-color: darkturquoise;
+  background-color: #fa9b49;
+  border-radius: var(--redondeo);
 }
 
 .redes {
@@ -64,7 +70,8 @@ img {
     "encabezado-actividades"
     "estado-actividades";
   grid-area: actividades-ficha;
-  background-color: deeppink;
+  background-color: #fe6e3a;
+  border-radius: var(--redondeo);
 }
 
 .titulo-actividades {
@@ -131,7 +138,8 @@ img {
   grid-auto-flow: row;
   grid-template-areas: "estadohtml estadocss estadojs estadoui estadoux total";
   grid-area: estados-ficha;
-  background-color: firebrick;
+  background-color: #fd5a35;
+  border-radius: var(--redondeo);
 }
 
 .estadohtml {
